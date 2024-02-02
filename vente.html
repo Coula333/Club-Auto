@@ -2,12 +2,20 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" >
-        <title>Club Auto</title>
+        <meta name="description" content="Club Auto, le meilleur de l'automobile sur internet. Vente et location de véhicules neufs et d'occasions">
+        <title>Club Auto - Page d'accueil</title>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/jQuery-3.7.1"></script>
+        <script src="/js/menu.js"></script>
+
     </head>
     <body>
         <header id="mainHeader">
+            <h1 class="accessibility">Club Auto</h1>
             <nav id="mainNav">
-                <h1 class="accessibility">Club Auto</h1>
+                <h1 class="accessibility">Menu principal</h1>
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <p><img src="/images/facebook-carre.svg" alt="Icone Facebook"></p>
                 <p><img src="/images/twitter-carre.svg" alt="Icone Twitter"></p>
                 <p><img src="/images/icone-adresse.png" alt="Icone adresse">
@@ -20,7 +28,6 @@
                     01 23 45 67 89</a></p>
                 <p>Ouverture: du lundi au samedi <br>
                     Horaires: de 9h à 17h</p>
-                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <ul>
                     <li><a href="index.html" title="Vers la page d'accueil du site 'Club Auto'">Accueil</a></li>
                     <li><a href="vente.html" title="Vers la vente de véhicules">Vente</a></li>
@@ -28,6 +35,7 @@
                     <li><a href="contact.html" title="Vers la page de contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="menuToggle"><img src="/images/burger-menu.svg" alt="Ouvrir / Fermer le menu" /></button>
         </header><!--Ici se termine le #mainHeader-->
         <section id="pageContent">
             

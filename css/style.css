@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+:root {
+    --white : #FFFFFF;
+    --orange : #FAB637;
+    --red : #FF4848;
+    --brown : #CC6119;
+    --grey : #ECEFF3;
+    --black: #232628;
+    --blue : #6C98E1;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 1rem;
+}
+
+#mainHeader h1 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 3em;
+}
+#mainHeader h2 {
+    text-transform: uppercase;
+    color: var(--brown);
+    font-weight: bold;
+    font-size: 1em;
+}
+#mainHeader address{
+    color: var(--grey);
+    font-style: normal;
+    text-transform: uppercase;
+}
+#mainHeader a {
+    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    font-size : 1.5em
+}
+#mainFooter h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#mainFooter {
+    font-family: OpenSans;
+}
+#mainHeader, #mainFooter {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#pageContent > h1 {
+    text-transform: uppercase;
+}
+
+#mainNav a {
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#mainNav ul {
+    list-style-type: none;
+    background-color: var(--grey);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+span {
+    color: var(--blue);
+}
+
+#copyright {
+    text-align: center;
+    color: var(--grey);
+}
+    
+.accessibility {
+    position: absolute;
+    left: -15000px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    }
+
+h3 {
+    text-transform: uppercase;
+}
+
+ul.breadcrumb {
+    text-transform: uppercase;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: var(--white);
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 3px;
+    color: var(--black);
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: var(--black);
+    text-decoration: none;
+}

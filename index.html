@@ -2,12 +2,20 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" >
-        <title>Club Auto</title>
+        <meta name="description" content="Club Auto, le meilleur de l'automobile sur internet. Vente et location de véhicules neufs et d'occasions">
+        <title>Club Auto - Page d'accueil</title>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/jQuery-3.7.1"></script>
+        <script src="/js/menu.js"></script>
+
     </head>
     <body>
         <header id="mainHeader">
+            <h1 class="accessibility">Club Auto</h1>
             <nav id="mainNav">
-                <h1 class="accessibility">Club Auto</h1>
+                <h1 class="accessibility">Menu principal</h1>
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <p><img src="/images/facebook-carre.svg" alt="Icone Facebook"></p>
                 <p><img src="/images/twitter-carre.svg" alt="Icone Twitter"></p>
                 <p><img src="/images/icone-adresse.png" alt="Icone adresse">
@@ -20,7 +28,6 @@
                     01 23 45 67 89</a></p>
                 <p>Ouverture: du lundi au samedi <br>
                     Horaires: de 9h à 17h</p>
-                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <ul>
                     <li><a href="index.html" title="Vers la page d'accueil du site 'Club Auto'">Accueil</a></li>
                     <li><a href="vente.html" title="Vers la vente de véhicules">Vente</a></li>
@@ -28,6 +35,7 @@
                     <li><a href="contact.html" title="Vers la page de contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="menuToggle"><img src="/images/burger-menu.svg" alt="Ouvrir / Fermer le menu" /></button>
         </header><!--Ici se termine le #mainHeader-->
         <section id="pageContent">
             <h1>Club Auto Le Meilleur de l'automobile</h1>
@@ -35,12 +43,15 @@
                 <img src="/images/vehicule1.jpg" alt="Image montrant plusieurs véhicules">
             </figure>
             <section>
-            <figure>
+            <div>
+                <figure>
                 <img src="/images/clients.jpg" alt="Image d'une femme et d'un homme heureux devant une voiture dans une consession">
-            </figure>
+                </figure>
                 <h2>Bienvenue chez Club Auto</h2>
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita harum id qui at iure doloremque natus ex laborum. Magni.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium laboriosam in, beatae quam error quae ea sapiente iure vel. Recusandae accusamus quasi veritatis placeat, quae veniam itaque voluptatem reprehenderit, dicta molestiae, pariatur ad. Iure laboriosam itaque labore tempore dolore modi enim obcaecati minus. Ipsa atque vel nam consectetur autem nobis.</p>         
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium laboriosam in, beatae quam error quae ea sapiente iure vel. Recusandae accusamus quasi veritatis placeat, quae veniam itaque voluptatem reprehenderit, dicta molestiae, pariatur ad. Iure laboriosam itaque labore tempore dolore modi enim obcaecati minus. Ipsa atque vel nam consectetur autem nobis.</p>
+            </div>
+            <div>
                 <h2>Le meilleur de l'automobile</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur, ea facere pariatur architecto qui quasi enim temporibus. Animi aliquid fugit commodi ipsa, doloribus recusandae sapiente. Harum nobis dignissimos exercitationem excepturi cum voluptates accusantium nemo sunt? Ea fugit eum repudiandae.</p>
                 <ul>
@@ -50,32 +61,82 @@
                     <li>Reiciendis quos eligendi blanditiis est.</li>
                     <li>Beatae dicta illo impedit suscipit!</li>
                 </ul>
-            <figure>
+                <figure>
                     <img src="/images/entretien.jpg" alt="Image d'un homme qui lustre un phare de voiture">
-            </figure>    
+                </figure>
+            </div>    
             </section>
             <section>
             <figure>
                     <img src="/images/femme-adossée.jpg" alt="Image d'une femme en robe avec un chapeau assise sur le bord du coffre ouvert d'une voiture et contemplant le paysage valloné">
             </figure>    
-                <h2>Vous souhaitez louer ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iusto temporibus atque, alias soluta modi maxime sint, ab accusantium porro exercitationem labore, inventore corrupti rem placeat dolores quis ratione. Impedit.</p>
-                <h2>Vous souhaitez achetez ?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis qui beatae aliquid reiciendis. Modi ipsa magni, expedita ab soluta corporis neque, at quaerat reiciendis doloribus ipsam pariatur reprehenderit quas cupiditate perferendis dolorem ea laudantium possimus autem distinctio sapiente perspiciatis. Asperiores?</p>
+                <div>
+                    <h2>Vous souhaitez louer ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iusto temporibus atque, alias soluta modi maxime sint, ab accusantium porro exercitationem labore, inventore corrupti rem placeat dolores quis ratione. Impedit.</p>
+                </div>
+                <div>
+                    <h2>Vous souhaitez achetez ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis qui beatae aliquid reiciendis. Modi ipsa magni, expedita ab soluta corporis neque, at quaerat reiciendis doloribus ipsam pariatur reprehenderit quas cupiditate perferendis dolorem ea laudantium possimus autem distinctio sapiente perspiciatis. Asperiores?</p>
+                </div>
             </section>
             <section>
-                <h2>Véhicules récents</h2>
+                <h2>Vehicules recents</h2>
+                <div>
+                    <div>
+                        <figure>
+                        <img src="/images/vehicule2.jpg" alt="BMW 535I, Navi, Leather, ABS">
+                        </figure>
+                    </div>
+                    <div>
+                        <p>BMW 535I, Navi,<br>
+                        Leather, ABS</p>
+                        <p>5 500 €</p>
+                    </div>
+                </div>
+                    <div>
+                        <figure>
+                        <img src="/images/vehicule2.jpg" alt="BMW 328I, Sport Line Body Kit">
+                        </figure>
+                    </div>
+                    <div>
+                        <p>BMW 328I, Sport<br>
+                        Line Body Kit</p>
+                        <p>8 000 €</p>
+                    </div>
+                <div>
+                    <div>
+                        <figure>
+                        <img src="/images/vehicule2.jpg" alt="Ford Explorer 2015 4WD">
+                        </figure>
+                    </div>
+                    <div>
+                        <p>Ford Explorer 2015<br>
+                        4WD</p>
+                        <p>9 000 €<br>
+                        8 200 €</p>
+                    </div>
+                </div>
             </section>
             <section>
                 <h2>Pourquoi nous choisir ?</h2>
-                    <h3>Financement</h3>
-                    <H3>Réactivité de<br>
+                    <div>
+                        <h3>Financement</h3>
+                    </div>    
+                    <div>
+                        <H3>Réactivité de<br>
                         l'équipe technique</H3>
-                    <h3>A l'écoute de notre<br>
+                    </div>
+                    <div>
+                        <h3>A l'écoute de notre<br>
                         clientèle</h3>
-                    <h3>Service &amp;<br>
+                    </div>
+                    <div>
+                        <h3>Service &amp;<br>
                         maintenance</h3>
-                    <h3>Contactez nous</h3>
+                    </div>
+                    <div>
+                        <button onclick="window.location.href = '/contact.html';">Contactez nous</button>
+                    </div>
             </section>
             <figure>
                 <img src="/images/vehicule3.jpg" alt="Image zoomée sur l'avant droit d'une voiture">

@@ -2,12 +2,20 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" >
-        <title>Club Auto</title>
+        <meta name="description" content="Club Auto, le meilleur de l'automobile sur internet. Vente et location de véhicules neufs et d'occasions">
+        <title>Club Auto - Page d'accueil</title>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/jQuery-3.7.1"></script>
+        <script src="/js/menu.js"></script>
+
     </head>
     <body>
         <header id="mainHeader">
+            <h1 class="accessibility">Club Auto</h1>
             <nav id="mainNav">
-                <h1 class="accessibility">Club Auto</h1>
+                <h1 class="accessibility">Menu principal</h1>
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <p><img src="/images/facebook-carre.svg" alt="Icone Facebook"></p>
                 <p><img src="/images/twitter-carre.svg" alt="Icone Twitter"></p>
                 <p><img src="/images/icone-adresse.png" alt="Icone adresse">
@@ -20,7 +28,6 @@
                     01 23 45 67 89</a></p>
                 <p>Ouverture: du lundi au samedi <br>
                     Horaires: de 9h à 17h</p>
-                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <ul>
                     <li><a href="index.html" title="Vers la page d'accueil du site 'Club Auto'">Accueil</a></li>
                     <li><a href="vente.html" title="Vers la vente de véhicules">Vente</a></li>
@@ -28,9 +35,44 @@
                     <li><a href="contact.html" title="Vers la page de contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="menuToggle"><img src="/images/burger-menu.svg" alt="Ouvrir / Fermer le menu" /></button>
         </header><!--Ici se termine le #mainHeader-->
         <section id="pageContent">
-            
+            <ul class="breadcrumb">
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/vente.html">Vente</a></li>
+                <li><a aria-current="page">BMW 535I, NAVI, LEATHER, ABS</a></li>
+            </ul>
+            <h1>BMW 535i, Navi, Leather, ABS</h1>
+            <div>
+                <figure>
+                <img src="/images/vehicule2.jpg" alt="BMW 535I, Navi, Leather, ABS">
+                </figure>
+            </div>
+            <div>
+                <h2>Description</h2>
+                <h2>Technique</h2>
+                <h2>Options</h2>
+                <H2>Contact</H2>
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, cum. Deserunt quod, repellendus sint obcaecati ab eius odio nesciunt esse, magni aspernatur doloribus facilis numquam accusamus non.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vero eius amet assumenda error possimus vitae vel corporis sit neque hic facere explicabo perferendis, harum tempora nisi aperiam atque debitis soluta molestiae rerum voluptatum quos excepturi? Nostrum neque quibusdam odio. Vitae quaerat quas laboriosam recusandae minus voluptatem, praesentium similique aliquid deleniti unde laudantium rem, ipsa earum mollitia quibusdam est repellendus harum nostrum accusantium nemo officiis facere? Perspiciatis nulla doloribus saepe. Officia consequuntur non reprehenderit, maiores a id quas placeat molestias harum cumque nulla nesciunt iusto ad perferendis, sequi perspiciatis! Distinctio iusto modi natus explicabo provident repudiandae aspernatur id, molestias tempore nihil unde deleniti eveniet dolore accusamus ipsum. Obcaecati optio odit facere aperiam eaque cumque, soluta omnis non iste eligendi aut saepe quod laudantium ad provident facilis pariatur blanditiis! Accusantium sint nam ipsa dolore culpa commodi natus doloribus cupiditate error vel tempora iusto harum tenetur sequi nemo, deleniti ipsam asperiores voluptas!</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ullam quisquam laboriosam ab eaque, sequi eligendi quibusdam harum est cum voluptatibus autem ipsum atque magnam!</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, vel. Dignissimos odio dicta voluptatum molestias quaerat ducimus culpa quod magnam consequatur vero accusantium repudiandae quam quidem ut molestiae, totam, est pariatur architecto repellendus velit quisquam dolor atque nemo? Consectetur, fugit!</p>
+                </div>
+                <div>
+                    <h2>Options</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
         </section><!--Ici se termine le #pageContent-->
         <footer id="mainFooter">
             <p>Club Auto <br>
