@@ -1,131 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+/*--------- GLOBAL ELEMENTS ----------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap");
 
 :root {
-    --white : #FFFFFF;
-    --orange : #FAB637;
-    --red : #FF4848;
-    --brown : #CC6119;
-    --grey : #ECEFF3;
-    --black: #232628;
-    --blue : #6C98E1;
-    box-sizing: border-box;
+  --white: #ffffff;
+  --orange: #fab637;
+  --red: #ff4848;
+  --brown: #cc6119;
+  --grey: #eceff3;
+  --black: #232628;
+  --blue: #6c98e1;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 1rem;
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 1rem;
+  margin: 0;
+}
+
+Header {
+  height: 100px;
+  width: auto;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
+
 h1 {
-    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
+  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 1rem;
-}
-
-#mainHeader h1 {
-    text-transform: uppercase;
-    color: var(--white);
-    font-weight: bold;
-    font-size: 3em;
-}
-#mainHeader h2 {
-    text-transform: uppercase;
-    color: var(--brown);
-    font-weight: bold;
-    font-size: 1em;
-}
-#mainHeader address{
-    color: var(--grey);
-    font-style: normal;
-    text-transform: uppercase;
-}
-#mainHeader a {
-    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
-    font-weight: bold;
-    color: var(--white);
-    text-decoration: none;
-    font-size : 1.5em
-}
-#mainFooter h1 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-#mainFooter {
-    font-family: OpenSans;
-}
-#mainHeader, #mainFooter {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-#pageContent > h1 {
-    text-transform: uppercase;
-}
-
-#mainNav a {
-    color: var(--black);
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-#mainNav ul {
-    list-style-type: none;
-    background-color: var(--grey);
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
-}
-
-span {
-    color: var(--blue);
-}
-
-#copyright {
-    text-align: center;
-    color: var(--grey);
-}
-    
-.accessibility {
-    position: absolute;
-    left: -15000px;
+  font-family: "Open Sans", sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 1rem;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    }
+  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
 
 h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+#mainHeader,
+#mainFooter {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/*---------- HEADER & NAVIGATION ----------*/
+
+#mainHeader {
+  height: 120px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  padding: 20px 100px;
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 1fr 100px;
+  grid-auto-rows: 80px;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+#mainHeader div {
+  display: flex;
+  align-items: center;
+}
+#mainHeader h1 {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 3em;
+  height: 80px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+#iconMainHeader img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background-color: var(--grey);
+}
+.pictogram {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  float: left;
+}
+#mainHeader h2 {
+  color: var(--brown);
+  font-weight: bold;
+  font-size: 1em;
+}
+#mainHeader address {
+  color: var(--grey);
+  font-style: normal;
+  text-transform: uppercase;
+}
+#mainHeader a {
+  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/*---------- FOOTER & COPYRIGHT ----------*/
+#mainFooter {
+  font-family: "Open Sans", sans-serif, Verdana, Geneva, Tahoma;
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 100px 20px 100px;
+  gap: 20px;
+  justify-content: space-around;
+}
+#mainFooter img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background-color: var(--grey);
+}
+#copyright {
+  text-align: center;
+  grid-column: span 5;
+  border-top: 1px var(--grey) solid;
+}
+#mainFooter h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+#mainNav {
+  background-color: var(--grey);
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 120px;
+}
+#mainNav a {
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#mainNav ul {
+  background-color: var(--grey);
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 0 100px;
+  gap: 60px;
+  margin: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+  #mainNav li {
+ 
+  
+}
+  #mainNav li a:hover {
+    background-color: var(--brown);
+    color: var(--white);  
+}
+  
+
+/*---------- PAGE CONTENT ----------*/
+
+#pageContent > h1 {
+  text-transform: uppercase;
 }
 
 ul.breadcrumb {
-    text-transform: uppercase;
-    padding: 10px 16px;
-    list-style: none;
-    background-color: var(--white);
+  text-transform: uppercase;
+  padding: 10px 16px;
+  list-style: none;
+  background-color: var(--white);
 }
 
 ul.breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
-ul.breadcrumb li+li:before {
-    padding: 3px;
-    color: var(--black);
-    content: "/\00a0";
+ul.breadcrumb li + li:before {
+  padding: 3px;
+  color: var(--black);
+  content: "/\00a0";
 }
 
 ul.breadcrumb li a {
-    color: var(--black);
-    text-decoration: none;
+  color: var(--black);
+  text-decoration: none;
+}
+
+/*---------- CLASS ----------*/
+
+.blue {
+  color: var(--blue);
+}
+.grey {
+  color: var(--grey);
+}
+.active {
+  color: var(--white);
+  background-color: var(--brown)
+}  
+.accessibility {
+  position: absolute;
+  left: -15000px;
 }
