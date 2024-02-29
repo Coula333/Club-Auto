@@ -58,7 +58,7 @@ h3 {
   color: var(--white);
 }
 
-/*---------- HEADER & NAVIGATION ----------*/
+/*---------- HEADER ----------*/
 
 #mainHeader {
   height: 120px;
@@ -67,30 +67,48 @@ h3 {
   position: fixed;
   padding: 20px 100px;
   display: grid;
-  grid-template-columns: 300px 1fr 1fr 1fr 100px;
+  grid-template-columns: 250px 1fr 1fr 1fr 90px;
   grid-auto-rows: 80px;
   gap: 40px;
   justify-content: space-around;
-}
-
-#mainHeader div {
-  display: flex;
   align-items: center;
 }
 #mainHeader h1 {
   text-transform: uppercase;
   color: var(--white);
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.5em;
   height: 80px;
   margin: 0;
   display: flex;
   align-items: center;
 }
+#mainHeader h2 {
+  color: var(--brown);
+  font-weight: bold;
+  font-size: 0.75em;
+  margin: 0;
+}
+#mainHeader address {
+  color: var(--white);
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+#mainHeader a {
+  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.25em;
+}
+#mainHeader span {
+  text-transform: initial;
+}
 #iconMainHeader img {
   width: 30px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
   background-color: var(--grey);
 }
 .pictogram {
@@ -99,53 +117,9 @@ h3 {
   margin-right: 5px;
   float: left;
 }
-#mainHeader h2 {
-  color: var(--brown);
-  font-weight: bold;
-  font-size: 1em;
-}
-#mainHeader address {
-  color: var(--grey);
-  font-style: normal;
-  text-transform: uppercase;
-}
-#mainHeader a {
-  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
-  font-weight: bold;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 1.5em;
-}
 
-/*---------- FOOTER & COPYRIGHT ----------*/
-#mainFooter {
-  font-family: "Open Sans", sans-serif, Verdana, Geneva, Tahoma;
-  height: 300px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 30px 100px 20px 100px;
-  gap: 20px;
-  justify-content: space-around;
-}
-#mainFooter img {
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-  background-color: var(--grey);
-}
-#copyright {
-  text-align: center;
-  grid-column: span 5;
-  border-top: 1px var(--grey) solid;
-}
-#mainFooter h1 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1em;
-}
+/*---------- NAVIGATION ----------*/
+
 #mainNav {
   background-color: var(--grey);
   position: absolute;
@@ -157,6 +131,7 @@ h3 {
   color: var(--black);
   text-transform: uppercase;
   text-decoration: none;
+  padding: 20px;
 }
 #mainNav ul {
   background-color: var(--grey);
@@ -167,20 +142,77 @@ h3 {
   flex-direction: row;
   height: 100%;
   padding: 0 100px;
-  gap: 60px;
   margin: 0;
   justify-content: flex-end;
   align-items: center;
 }
-  #mainNav li {
- 
-  
+#mainNav li {
+  font-size: 0.8em;
 }
-  #mainNav li a:hover {
-    background-color: var(--brown);
-    color: var(--white);  
+#mainNav li a:hover {
+  background-color: var(--brown);
+  color: var(--white);
 }
-  
+#mainNav li a:active {
+  background-color: var(--brown);
+  color: var(--white);
+}
+#menuToggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  width: 45px;
+  cursor: pointer;
+} 
+
+/*---------- FOOTER ----------*/
+
+#mainFooter {
+  font-family: "Open Sans", sans-serif, Verdana, Geneva, Tahoma;
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 100px 20px 100px;
+}
+#mainFooter h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+#mainFooter div {
+  margin-right: 20px;
+}
+#iconMainFooter img {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: var(--grey);
+}
+#newsletter img {
+  height: 40px;
+  width: 40px;
+}
+#newsletter div {
+  display: flex;
+  height: 40px;
+}
+#newsletter input {
+  min-width: 220px;
+  padding: 0;
+  border: 0;
+}
+#copyright {
+  text-align: center;
+  grid-column: span 5;
+  border-top: 1px var(--grey) solid;
+}
 
 /*---------- PAGE CONTENT ----------*/
 
@@ -212,17 +244,43 @@ ul.breadcrumb li a {
 
 /*---------- CLASS ----------*/
 
+.white {
+  color: var(--white);
+}
 .blue {
   color: var(--blue);
 }
 .grey {
   color: var(--grey);
 }
-.active {
+.activePage {
+  background-color: var(--brown);
   color: var(--white);
-  background-color: var(--brown)
-}  
+}
 .accessibility {
   position: absolute;
   left: -15000px;
+}
+
+/*---------- MEDIA QUERIES ----------*/
+
+@media screen and (max-width: 768px) {
+  #mainNav {
+    display: none;
+  }
+  #menuToggle {
+    display: block;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #mainNav.active {
+    background-color: var(--black)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  } 
 }

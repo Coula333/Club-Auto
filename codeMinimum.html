@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Club Auto, le meilleur de l'automobile sur internet. Vente et location de véhicules neufs et d'occasions">
     <title>Club Auto - Page d'accueil</title>
     <link rel="stylesheet" href="/css/normalize.css">
@@ -16,7 +17,7 @@
         </div>
         <div id="address">
             <img class="pictogram" src="/images/icone-adresse.png" alt="Icone adresse">
-            <h2>Adresse:</h2>
+            <h2>Adresse :</h2>
             <address>
             Avenue Charles de Gaulle
             <br>75000 Paris
@@ -24,28 +25,27 @@
         </div>
         <div id="phone">
             <img class="pictogram" src="/images/icon-telephone.png" alt="Icone téléphone">
-            <h2>Telephone:</h2>
+            <h2>Téléphone :</h2>
             <a href="tel:0123456789"> 01 23 45 67 89</a>
         </div>
         <div id="schedules">
-            <h2>Ouverture:</h2>
-            <p>Du Lundi au Samedi</p>
-            <br>
-            <h2>Horaires:</h2>
-            <p>de 9h à 17h</p>
+            <h2>Ouverture : <span class="white">Du Lundi au Samedi</span></h2>
+            <h2>Horaires : <span class="white">De 9h à 17h</span></h2>
         </div>
         <div id="iconMainHeader">
           <img src="/images/facebook-carre.svg" alt="Icone Facebook">
           <img src="/images/twitter-carre.svg" alt="Icone Twitter">
         </div>
+        <button id="menuToggle">
+          <img src="/images/burger-menu.svg" alt="Ouvrir / Fermer le menu"/>
+        </button>
       <nav id="mainNav">
-        <!--<h1 class="accessibility"> Menu principal</h1>
+        <h1 class="accessibility"> Menu principal</h1>
           <p class="accessibility">
             <a href="#pageContent" title="Accéder directement au contenu principal de cette page"
             >Passer le menu</a>
-          </p>>
-          <!--Ajouter à la bonne <li> la class="active" selon la page concernée pour l'affichage dans le menu-->
-          <ul>
+          </p>
+        <ul>
           <li>
             <a href="index.html"
               title="Vers la page d'accueil du site 'Club Auto'"
@@ -63,13 +63,20 @@
           </li>
         </ul>
       </nav>
-      <!--<button id="menuToggle">
+      <button id="menuToggle">
         <img src="/images/burger-menu.svg" alt="Ouvrir / Fermer le menu"/>
-      </button>!-->
-    </header>
+      </button>
+        <!--<h1 class="accessibility"> Menu principal</h1>
+          <p class="accessibility">
+            <a href="#pageContent" title="Accéder directement au contenu principal de cette page"
+            >Passer le menu</a>
+          </p>-->
+      </header>
     <!--Ici se termine le #mainHeader-->
     <section id="pageContent"><!--Ici commence le #pageContent-->
-    
+      <main>
+        
+      </main>
     </section>
     <!--Ici se termine le #pageContent-->
     <footer id="mainFooter">
@@ -90,14 +97,21 @@
           <strong>Dimanche et jours fériés :</strong></span>Fermé
         </p>
       </div>
-      <div>
+      <div id="newsletter">
         <h1>Newsletter</h1>
-        <p>
+        <div>
           <span class="grey">
             <label for="emailClient"></label>
-            <input type="email" name="emailClient" id="emailClient" placeholder="  Entrez votre email" required/>
-            <br/> Inscrivez-vous pour recevoir les dernières offres</span>
-        </p>
+            <div>
+              <input type="email" name="emailClient" id="emailClient" placeholder="  Entrez votre email" required/>
+              <img src="/images/rss-carre.svg" alt="Icone RSS" aria-hidden="true">
+            </div>
+            <div>
+              <p> Inscrivez-vous pour recevoir les 
+              <br>dernières offres</p>
+            </div>
+          </span>
+        </div>
       </div>
       <div id="iconMainFooter">
         <h1>Reseaux sociaux</h1>
@@ -118,29 +132,3 @@
     <!--Ici se termine le #mainFooter-->
   </body>
 </html>
-
-<!--
-    <ul>
-                    <li id="logo"><h1>Club Auto</h1></li>
-                    <li id="adress">
-                        <img src="/images/icone-adresse.png" alt="Icone adresse">
-                        <h2>Adresse:</h2>
-                        <address>
-                        Avenue Charles de Gaulle<br>
-                        75000 Paris
-                        </address></li>
-                    <li id="phone">
-                        <p><img src="/images/icon-telephone.png" alt="Icone téléphone">
-                        <h2>Telephone:</h2>
-                        <a href="tel:0123456789">
-                        01 23 45 67 89</a></p></li>
-                    <li id="schedules">
-                        <p><h2>Ouverture:</h2>
-                        <p>Du Lundi au Samedi</p>
-                        <h2>Horaires:</h2>
-                        <p>de 9h à 17h</p></li>
-                    <li id="iconMainHeader">
-                        <img src="/images/facebook-carre.svg" alt="Icone Facebook">
-                        <img src="/images/twitter-carre.svg" alt="Icone Twitter"></li>
-                </ul>
--->
