@@ -15,6 +15,7 @@
 
 * {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,12 +23,6 @@ body {
   font-size: 1rem;
   margin: 0;
 }
-
-Header {
-  height: 100px;
-  width: auto;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -45,77 +40,96 @@ p {
 h2 {
   font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
   text-transform: uppercase;
-  font-size: 1.5em;
 }
 
 h3 {
   text-transform: uppercase;
 }
 
-#mainHeader,
-#mainFooter {
-  background-color: var(--black);
-  color: var(--white);
-}
-
 /*---------- HEADER ----------*/
 
-#mainHeader {
-  height: 120px;
-  width: 100%;
-  top: 0;
+.header {
   position: fixed;
-  padding: 20px 100px;
-  display: grid;
-  grid-template-columns: 250px 1fr 1fr 1fr 90px;
-  grid-auto-rows: 80px;
-  gap: 40px;
-  justify-content: space-around;
-  align-items: center;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
 }
-#mainHeader h1 {
+.header ul {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0px;
+  margin: 0;
+}
+.header li {
+  list-style: none;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+.header h1 {
   text-transform: uppercase;
   color: var(--white);
   font-weight: bold;
-  font-size: 2.5em;
-  height: 80px;
+  font-size: 2em;
   margin: 0;
-  display: flex;
-  align-items: center;
+  white-space: nowrap;
 }
-#mainHeader h2 {
+.header h2 {
   color: var(--brown);
   font-weight: bold;
   font-size: 0.75em;
   margin: 0;
 }
-#mainHeader address {
+.header address {
   color: var(--white);
   font-style: normal;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
-#mainHeader a {
+.header a {
   font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
   font-weight: bold;
   color: var(--white);
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1em;
 }
-#mainHeader span {
+.header span {
   text-transform: initial;
 }
-#iconMainHeader img {
+#headerSchedules {
+  flex-direction: column
+}
+#address img {
+  margin-right: 5px;
+}
+#iconHeader img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
   background-color: var(--grey);
 }
+.white {
+  color: var(--white);
+}
+.blue {
+  color: var(--blue);
+}
+.grey {
+  color: var(--grey);
+}
 .pictogram {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-right: 5px;
   float: left;
+}
+.accessibility {
+  position: absolute;
+  left: -15000px;
 }
 
 /*---------- NAVIGATION ----------*/
@@ -123,15 +137,16 @@ h3 {
 #mainNav {
   background-color: var(--grey);
   position: absolute;
-  height: 60px;
+  height: 45px;
   width: 100%;
-  top: 120px;
+  top: 100px;
+  padding-right: 100px;
 }
 #mainNav a {
   color: var(--black);
   text-transform: uppercase;
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
 }
 #mainNav ul {
   background-color: var(--grey);
@@ -141,13 +156,12 @@ h3 {
   display: flex;
   flex-direction: row;
   height: 100%;
-  padding: 0 100px;
   margin: 0;
   justify-content: flex-end;
   align-items: center;
 }
 #mainNav li {
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
 #mainNav li a:hover {
   background-color: var(--brown);
@@ -158,55 +172,59 @@ h3 {
   color: var(--white);
 }
 #menuToggle {
-  display: none;
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  width: 45px;
-  cursor: pointer;
+  display: none; 
 } 
 
 /*---------- FOOTER ----------*/
 
-#mainFooter {
-  font-family: "Open Sans", sans-serif, Verdana, Geneva, Tahoma;
-  height: 300px;
-  width: 100%;
+.footer {
   position: fixed;
   bottom: 0;
+  height: 250px;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif, Verdana, Geneva, Tahoma;
+  
+}
+.footer ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 30px 100px 20px 100px;
+  padding: 30px 120px;
+  margin: 0;
 }
-#mainFooter h1 {
+.footer li {
+  list-style: none;
+  width: auto;
+}
+.footer h1 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.75em;
 }
-#mainFooter div {
-  margin-right: 20px;
+.footer p {
+  font-size: 0.75em;
 }
-#iconMainFooter img {
-  width: 45px;
-  height: 45px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+#iconFooter img {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
   background-color: var(--grey);
 }
 #newsletter img {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 #newsletter div {
   display: flex;
-  height: 40px;
+  height: 35px;
+  width: 200px;
+  font-size: 0.75em;
 }
 #newsletter input {
-  min-width: 220px;
   padding: 0;
   border: 0;
+  width: 200px;
 }
 #copyright {
   text-align: center;
@@ -216,11 +234,16 @@ h3 {
 
 /*---------- PAGE CONTENT ----------*/
 
+#pageContent {
+  display: flex;
+}
+
 #pageContent > h1 {
   text-transform: uppercase;
 }
 
-ul.breadcrumb {
+
+/*ul.breadcrumb {
   text-transform: uppercase;
   padding: 10px 16px;
   list-style: none;
@@ -240,47 +263,96 @@ ul.breadcrumb li + li:before {
 ul.breadcrumb li a {
   color: var(--black);
   text-decoration: none;
-}
+}*/
 
 /*---------- CLASS ----------*/
-
-.white {
-  color: var(--white);
-}
-.blue {
-  color: var(--blue);
-}
-.grey {
-  color: var(--grey);
-}
-.activePage {
-  background-color: var(--brown);
-  color: var(--white);
-}
-.accessibility {
-  position: absolute;
-  left: -15000px;
-}
 
 /*---------- MEDIA QUERIES ----------*/
 
 @media screen and (max-width: 768px) {
-  #mainNav {
-    display: none;
-  }
   #menuToggle {
     display: block;
+    background-color: transparent;
+    border: none;
+    position: fixed;
     top: 30px;
-    right: 30px;
-    width: 30px;
+    right: 5px;
+    width: 60px;
     cursor: pointer;
-    z-index: 3;
   }
-  #mainNav.active {
-    background-color: var(--black)
-    display: flex;
-    justify-content: center;
+  .header {
+    min-height: 200px;
+  }
+  .header ul {
+    flex-direction: column;
+    padding: 30px 20px 0px 20px;
+    gap: 30px;
+  }
+  .header h1 {
+    font-size: 3em;
+    width: 300px;
+  }
+  .header h2 {
+    font-size: 1em;
+  }
+  .header a {
+    font-size: 1.5em;
+  }
+  .pictogram {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    float: left;
+  }
+  #mainNav {
+    top: 200px;
+    background-color: transparent;
+    padding: 0;
+  }  
+  #mainNav ul{
+    flex-direction: column;
     align-items: center;
-    z-index: 3;
-  } 
-}
+    justify-content: space-around;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
+  #address, #headerSchedules, #iconHeader, #mainNav {
+    display: none;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 20px;     
+  }
+  .footer h1 {
+    font-size: 1.25em;
+  }
+  .footer p {
+    font-size: 1.15em;
+  }
+  #iconFooter img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    background-color: var(--grey);
+  }
+  #newsletter img {
+    height: 50px;
+    width: 50px;
+  }
+  #newsletter div {
+    height: 50px;
+    width: 400px;
+    font-size: 1.25em;  
+  }
+  #newsletter input {
+    padding: 0;
+    border: 0;
+    width: 400px;
+  }

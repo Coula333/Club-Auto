@@ -11,34 +11,39 @@
     <script src="/js/menu.js"></script>
   </head>
   <body>
-    <header id="mainHeader">
-        <div id="logo">
-          <h1>Club Auto</h1>
-        </div>
-        <div id="address">
+    <header><!--Ici commence le #header-->
+      <div class="header">
+        <ul>
+          <li id="headerLogo">
+            <h1>Club Auto</h1>
+          </li>
+          <li id="address">
             <img class="pictogram" src="/images/icone-adresse.png" alt="Icone adresse">
-            <h2>Adresse :</h2>
-            <address>
-            Avenue Charles de Gaulle
-            <br>75000 Paris
-            </address>
-        </div>
-        <div id="phone">
+            <div>
+              <h2>Adresse :</h2>
+              <address>
+              Avenue Charles de Gaulle
+              <br>75000 Paris
+              </address>
+            </div>
+          </li>
+          <li id="phone">
             <img class="pictogram" src="/images/icon-telephone.png" alt="Icone téléphone">
-            <h2>Téléphone :</h2>
-            <a href="tel:0123456789"> 01 23 45 67 89</a>
-        </div>
-        <div id="schedules">
-            <h2>Ouverture : <span class="white">Du Lundi au Samedi</span></h2>
-            <h2>Horaires : <span class="white">De 9h à 17h</span></h2>
-        </div>
-        <div id="iconMainHeader">
-          <img src="/images/facebook-carre.svg" alt="Icone Facebook">
-          <img src="/images/twitter-carre.svg" alt="Icone Twitter">
-        </div>
-        <button id="menuToggle">
-          <img src="/images/burger-menu.svg" alt="Ouvrir / Fermer le menu"/>
-        </button>
+            <div>
+              <h2>Téléphone :</h2>
+              <a href="tel:0123456789"> 01 23 45 67 89</a>
+            </div>
+          </li>
+          <li id="headerSchedules">
+              <h2>Ouverture : <span class="white">Du Lundi au Samedi</span></h2>
+              <h2>Horaires : <span class="white">De 9h à 17h</span></h2>
+          </li>
+          <li id="iconHeader">
+            <img src="/images/facebook-carre.svg" alt="Icone Facebook">
+            <img src="/images/twitter-carre.svg" alt="Icone Twitter">
+          </li>
+        </ul>
+      </div> 
       <nav id="mainNav">
         <h1 class="accessibility"> Menu principal</h1>
           <p class="accessibility">
@@ -62,73 +67,58 @@
             <a href="contact.html" title="Vers la page de contact">Contact</a>
           </li>
         </ul>
+        </nav>
       </nav>
       <button id="menuToggle">
         <img src="/images/burger-menu.svg" alt="Ouvrir / Fermer le menu"/>
       </button>
-        <!--<h1 class="accessibility"> Menu principal</h1>
-          <p class="accessibility">
-            <a href="#pageContent" title="Accéder directement au contenu principal de cette page"
-            >Passer le menu</a>
-          </p>-->
-      </header>
-    <!--Ici se termine le #mainHeader-->
+      </header><!--Ici se termine le #header-->
     <section id="pageContent"><!--Ici commence le #pageContent-->
       <main>
         
       </main>
-    </section>
-    <!--Ici se termine le #pageContent-->
-    <footer id="mainFooter">
-      <div>
-        <h1><span class="blue">Club</span> Auto</h1>
-        <p>
-          <span class="grey">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-            accusantium quaerat nostrum dolorem ad placeat rem, natus quod
-            fugit.</span>
-        </p>
-      </div>
-      <div>
-        <h1>Horaire d'ouverture</h1>
-        <p>
-          <span class="grey"><strong>Lundi - Samedi :</strong></span> 09:00 -
-          17:00 <br/><span class="grey">
-          <strong>Dimanche et jours fériés :</strong></span>Fermé
-        </p>
-      </div>
-      <div id="newsletter">
-        <h1>Newsletter</h1>
-        <div>
-          <span class="grey">
-            <label for="emailClient"></label>
+    </section><!--Ici se termine le #pageContent-->
+    <footer><!--Ici commence le #footer-->
+      <div class="footer">
+        <ul>
+          <li id="footerLogo">
+            <h1><span class="blue">Club</span> Auto</h1>
+            <p><span class="grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed accusantium quaerat nostrum dolorem ad placeat rem, natus quod fugit.</span>
+            </p>
+          </li>
+          <li id="footerSchedules">
+            <h1>Horaire d'ouverture</h1>
+            <p><span class="grey"><strong>Lundi - Samedi :</strong></span> 09:00 - 17:00 <br/><span class="grey">
+            <strong>Dimanche et jours fériés :</strong></span> Fermé
+            </p>
+          </li>
+          <li id="newsletter">
+            <h1>Newsletter</h1>
             <div>
-              <input type="email" name="emailClient" id="emailClient" placeholder="  Entrez votre email" required/>
+              <label for="emailClient"></label>
+              <input type="email" name="emailClient" id="emailClient" placeholder="   Entrez votre email" required/>
               <img src="/images/rss-carre.svg" alt="Icone RSS" aria-hidden="true">
             </div>
-            <div>
-              <p> Inscrivez-vous pour recevoir les 
-              <br>dernières offres</p>
-            </div>
-          </span>
-        </div>
-      </div>
-      <div id="iconMainFooter">
-        <h1>Reseaux sociaux</h1>
-        <p>
-          <img src="/images/facebook-carre.svg" alt="Icone Facebook">
-          <img src="/images/twitter-carre.svg" alt="Icone Twitter">
-          <img src="/images/instagram-carre.svg" alt="Icone Instagram">
-          <img src="/images/google-plus-carre.svg" alt="Icone Google+">
-          <img src="/images/youtube-carre.svg" alt="Icone Youtube">
-        </p>
-      </div>
-      <div id="copyright">
-        <p>
-          <span class="grey">&copy; Copyright Club Auto - Tous droits réservés</span>
-        </p>
+              <p>Inscrivez-vous pour recevoir les dernières offres</p>
+          </li>
+          <li id="iconFooter">
+            <h1>Reseaux sociaux</h1>
+            <p>
+            <img src="/images/facebook-carre.svg" alt="Icone Facebook">
+            <img src="/images/twitter-carre.svg" alt="Icone Twitter">
+            <img src="/images/instagram-carre.svg" alt="Icone Instagram">
+            <img src="/images/google-plus-carre.svg" alt="Icone Google+">
+            <img src="/images/youtube-carre.svg" alt="Icone Youtube">
+            </p>
+          </li>
+          <li id="copyright">
+            <p>
+            <span class="grey">Copyright &copy; Club Auto - Tous droits réservés</span>
+            </p>
+          </li>
+        </ul>
       </div>
     </footer>
-    <!--Ici se termine le #mainFooter-->
+    <!--Ici se termine le #footer-->
   </body>
 </html>
